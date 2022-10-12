@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useGlobalState } from './store'
-import { isWallectConnected, loadNfts } from './Adulam'
+import { isWallectConnected, loadNfts } from './Beyondmetaverse'
 import Alert from './components/Alert'
 import Artworks from './components/Artworks'
 import Footer from './components/Footer'
@@ -12,7 +12,7 @@ const App = () => {
   const [nfts] = useGlobalState('nfts')
 
   useEffect(async () => {
-    await isWallectConnected().then(() => console.log('Blockchain Loaded'))
+    await isWallectConnected().then(() => console.log('Wallet Connected'))
     await loadNfts()
   }, [])
 

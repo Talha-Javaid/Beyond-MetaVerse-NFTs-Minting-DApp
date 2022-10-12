@@ -24,7 +24,7 @@ const Artworks = ({ artworks }) => {
           {nfts.map((nft, i) => (
             <a
               key={i}
-              href={nft.url}
+              // href={nft.url}
               target="_blank"
               className="relative shadow-xl shadow-black p-3
                 bg-white rounded-lg item w-64 h-64 object-contain 
@@ -37,12 +37,12 @@ const Artworks = ({ artworks }) => {
                   flex flex-row justify-between items-center
                   label-gradient p-2 w-full text-white text-sm"
               >
-                <p>{`Adulam NFT #${nft.id}`}</p>
+                <p>{`Beyond MetaVerse NFT #${nft.id}`}</p>
                 <div className="flex justify-center items-center space-x-2">
                   <img
                     className="w-5 cursor-pointer"
                     src={ethlogo}
-                    alt={`Adulam NFT collection #` + nft.id}
+                    alt={`Beyond MetaVerse NFT collection #` + nft.id}
                   />
                   {nft.cost}
                 </div>

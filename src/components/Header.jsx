@@ -1,5 +1,5 @@
 import ethlogo from '../assets/ethlogo.png'
-import { connectWallet } from '../Adulam'
+import { connectWallet } from '../Beyondmetaverse'
 import { truncate, useGlobalState } from '../store'
 
 const Header = () => {
@@ -8,8 +8,8 @@ const Header = () => {
   return (
     <nav className="w-4/5 flex md:justify-center justify-between items-center py-4 mx-auto">
       <div className="flex flex-row justify-start items-center md:flex-[0.5] flex-initial">
-        <img className="w-8 cursor-pointer" src={ethlogo} alt="Adulam Logo" />
-        <span className="text-white text-2xl ml-2">Adulam</span>
+        <img className="w-8 cursor-pointer" src={ethlogo} alt="Beyond MetaVerse Logo" />
+        <span className="text-white text-2xl ml-2">Beyond MetaVerse</span>
       </div>
 
       <ul
